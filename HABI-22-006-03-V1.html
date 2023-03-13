@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- SUPPORTS OUTLOOK DPI SCALING-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- PREVENTS PAGE ZOOMING -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<!-- ADDS SUPPORT FOR OLD VERSIONS OF INTERNET EXPLORER -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- LINK DETECTION -->
+<meta name="format-detection" content="telephone=no"/>
+<!-- APPEARS IN BROWSER TAB -->
+<title>POCN</title>
+	
+<!-- OPTIONAL GOOGLE FONT -->
+ <!--[if !mso]><!-- --
+    <link href="" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+	
+<!-- FAVICON
+<link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=" /> -->
+	
+<!-- DARK MODE -->
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+  
+<style>
+	/* DARK MODE */
+	:root {
+		color-scheme: light dark;
+		supported-color-schemes: light dark;
+	  }
+	
+	
+/* PREVENTS BROWSER TEXT RESIZING */
+*, body, div, p, a, li, table, td, table td {
+	-webkit-text-size-adjust: none !important;
+	-moz-text-size-adjust: none !important;
+	-o-text-size-adjust: none !important;
+	-ms-text-size-adjust: none !important;
+}
+/* GENERAL STYLING */
+body, table, td, table td, img {
+	font-family: Arial, Helvetica, sans-serif;	
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*ALLOWS TEXT WRAPPING, CONTROLS LINE HEIGHT, AND PREVENTS ADDED BORDERS IN OUTLOOK */
+body, table, td, table td {
+	mso-line-height-rule: exactly; 
+  mso-margin-bottom-alt:0; 
+  mso-margin-top-alt:0; 
+  mso-table-lspace:0pt; 
+  mso-table-rspace:0pt;
+	border-collapse: collapse;	
+} 
+/* OUTLOOK.COM FIXES. OUTLOOK.COM AUTOMATICALLY ADDS A CLASS OF "ExternalClass" TO YOUR BODY TAG, WHICH IS WHY THESE WORK */
+/*RESETS OUTLOOK.COM LINE HEIGHT TO 100% INSTEAD OF ITS DEFAULT OF 131% */
+.ExternalClass * {
+	line-height: 100%;
+	width: 100%;	
+}
+
+@media only screen and (max-width: 599px) {
+/*------------MOBILE HIDE AND SHOW---------------*/
+.mobileHide {
+	display: none !important;
+	height: 0px !important;
+	width: 0px !important;
+	max-height: 0px !important;
+	max-width: 0px !important;
+	font-size: 0px !important;
+	line-height: 0px !important;
+}
+.mobileShow {
+	display: block !important;
+	height: auto !important;
+	width: auto !important;
+	max-height: none !important;
+	max-width: none !important;
+	font-size: 10px !important;
+	line-height: 10px !important;
+}
+/*-------------ALIGNMENT-------------------------*/
+.block {
+	display: block !important;	
+}
+.inlineBlock {
+	display: inline-block !important;	
+}
+.centerBlock {
+	margin: 0px auto !important; 
+	float: none !important;
+}
+.centerText {text-align: center !important;}
+.leftText {text-align: left !important;}
+.rightText {text-align: right !important;}
+
+/*---------HEIGHT----------*/
+.heightAuto {height: auto !important;}
+
+/*---------WIDTH----------*/
+.maxWidth480 {max-width: 480px !important;}
+.widthAuto {width: auto !important;}
+.widthFull {width: 100% !important; min-width: inherit !important; }
+.width320 {width: 320px !important; min-width: inherit !important;}
+.width318 {width: 318px !important;}
+.width310 {width: 310px !important;}
+.width300 {width: 300px !important;}
+.width298 {width: 298px !important;}
+.width290 {width: 290px !important;}
+.width280 {width: 280px !important;}
+.width278 {width: 278px !important;}
+.width270 {width: 270px !important;}
+.width260 {width: 260px !important;}
+.width250 {width: 250px !important;}
+.width240 {width: 240px !important;}
+.width230 {width: 230px !important;}
+.width220 {width: 220px !important;}
+.width210 {width: 210px !important;}
+.width200 {width: 200px !important;}
+.width190 {width: 190px !important;}
+.width180 {width: 180px !important;}
+.width170 {width: 170px !important;}
+.width160 {width: 160px !important;}
+.width150 {width: 150px !important;}
+.width140 {width: 140px !important;}
+.width130 {width: 130px !important;}
+.width120 {width: 120px !important;}
+.width110 {width: 110px !important;}
+.width100 {width: 100px !important;}
+.width90 {width: 90px !important;}
+.width80 {width: 80px !important;}
+.width70 {width: 70px !important;}
+.width60 {width: 60px !important;}
+.width50 {width: 50px !important;}
+.width40 {width: 40px !important;}
+.width30 {width: 30px !important;}
+.width20 {width: 20px !important;}
+.width10 {width: 10px !important;}
+.width5 {width: 5px !important;}
+
+/*---------PADDING----------*/
+.clearPadding {padding: 0px !important}
+.clearLeftPadding {padding-left: 0px !important;}
+.clearRightPadding {padding-right: 0px !important;}
+.clearTopPadding {padding-top: 0px !important;}
+.clearBottomPadding {padding-bottom: 0px !important;}
+
+.padding50 {padding: 50px !important;}
+.padding40 {padding: 40px !important;}
+.padding30 {padding: 30px !important;}
+.padding20 {padding: 20px !important;}
+.padding19 {padding: 19px !important;}
+.padding15 {padding: 15px !important;}
+.padding10 {padding: 10px !important;}
+.padding9 {padding: 9px !important;}
+.padding5 {padding: 5px !important;}
+
+.paddingLeft100 {padding-left: 100px !important;}
+.paddingLeft90 {padding-left: 90px !important;}
+.paddingLeft80 {padding-left: 80px !important;}
+.paddingLeft70 {padding-left: 70px !important;}
+.paddingLeft60 {padding-left: 60px !important;}
+.paddingLeft50 {padding-left: 50px !important;}
+.paddingLeft40 {padding-left: 40px !important;}
+.paddingLeft30 {padding-left: 30px !important;}
+.paddingLeft20 {padding-left: 20px !important;}
+.paddingLeft10 {padding-left: 10px !important;}
+.paddingLeft5 {padding-left: 5px !important;}
+
+.paddingRight100 {padding-right: 100px !important;}
+.paddingRight90 {padding-right: 90px !important;}
+.paddingRight80 {padding-right: 80px !important;}
+.paddingRight70 {padding-right: 70px !important;}
+.paddingRight60 {padding-right: 60px !important;}
+.paddingRight50 {padding-right: 50px !important;}
+.paddingRight40 {padding-right: 40px !important;}
+.paddingRight30 {padding-right: 30px !important;}
+.paddingRight20 {padding-right: 20px !important;}
+.paddingRight10 {padding-right: 10px !important;}
+.paddingRight5 {padding-right: 5px !important;}
+
+.paddingBottom100 {padding-bottom: 100px !important;}
+.paddingBottom90 {padding-bottom: 90px !important;}
+.paddingBottom80 {padding-bottom: 80px !important;}
+.paddingBottom70 {padding-bottom: 70px !important;}
+.paddingBottom60 {padding-bottom: 60px !important;}
+.paddingBottom50 {padding-bottom: 50px !important;}
+.paddingBottom40 {padding-bottom: 40px !important;}
+.paddingBottom30 {padding-bottom: 30px !important;}
+.paddingBottom20 {padding-bottom: 20px !important;}
+.paddingBottom10 {padding-bottom: 10px !important;}
+.paddingBottom5 {padding-bottom: 5px !important;}
+
+.paddingTop100 {padding-top: 100px !important;}
+.paddingTop90 {padding-top: 90px !important;}
+.paddingTop80 {padding-top: 80px !important;}
+.paddingTop70 {padding-top: 70px !important;}
+.paddingTop60 {padding-top: 60px !important;}
+.paddingTop50 {padding-top: 50px !important;}
+.paddingTop40 {padding-top: 40px !important;}
+.paddingTop30 {padding-top: 30px !important;}
+.paddingTop20 {padding-top: 20px !important;}
+.paddingTop10 {padding-top: 10px !important;}
+.paddingTop5 {padding-top: 5px !important;}
+
+/*---------BORDERS----------*/
+.clearBorders { border: none !important;}
+.clearLeftBorder {border-left: none !important;}
+.clearRightBorder {border-right: none !important;}
+.clearTopBorder {border-top: none !important;}
+.clearBottomBorder {border-bottom: none !important;}
+
+.leftBorder {border-left: 1px solid #666666 !important;}
+.rightBorder {border-right: 1px solid #666666 !important;}
+.topBorder {border-top: 1px solid #666666 !important;}
+.bottomBorder {border-bottom: 1px solid #666666 !important;}
+
+/*---------FONT SIZES----------*/
+.font40 {font-size:40px !important; line-height: 52px !important;}
+.font35 {font-size:35px !important; line-height: 44px !important;}
+.font30 {font-size:30px !important; line-height: 38px !important;}
+.font25 {font-size:25px !important; line-height: 32px !important;}
+.font20 {font-size:20px !important; line-height: 26px !important;}
+.font18 {font-size:18px !important; line-height: 22px !important;}
+.font17 {font-size:17px !important; line-height: 21px !important;}
+.font16 {font-size:16px !important; line-height: 20px !important;}
+.font15 {font-size:15px !important; line-height: 19px !important;}
+.font14 {font-size:14px !important; line-height: 18px !important;}
+.font13 {font-size:13px !important; line-height: 17px !important;}
+.font12 {font-size:12px !important; line-height: 16px !important;}
+.font11 {font-size:11px !important; line-height: 14px !important;}
+.font10 {font-size:10px !important; line-height: 13px !important;}
+	
+	.stripe {height: 20px !important;; line-height: 20px !important;; font-size: 20px !important;;}
+	.width145 {width: 145px !important;}
+}
+	
+/* DARK MODE */
+/* TARGETS OUTLOOK IOS, IOS MAIL, APPLE MAIL, OUTLOOK 2019 MAC, OUTLOOK.COM */
+@media (prefers-color-scheme: dark ) {
+	
+	/* BACKGROUNDS */
+	.darkModeBackgroundBlack {background: #000000 !important;}
+	.darkModeBackgroundGrey1 {background: #111111 !important;}
+	.darkModeBackgroundGrey2 {background: #222222 !important;}
+	.darkModeBackgroundGrey3 {background: #333333 !important;}
+	
+	/* TEXT */
+	.darkModeTextWhite {color: #fffffe !important;}
+	.darkModeTextLightGrey {color: #f4f4f4 !important;}
+	
+	/* HIDE */
+	.darkModeHide {display: none !important;}
+	
+	.darkModeBorderWhite {border-color: #fffffe !important;}
+	
+	}
+	
+	/* TARGETS OUTLOOK APP FOR ANDROID */
+	/* BACKGROUNDS */
+	[data-ogsc] .darkModeBackgroundBlack {background: #000000 !important;}
+	[data-ogsc] .darkModeBackgroundGrey1 {background: #111111 !important;}
+	[data-ogsc] .darkModeBackgroundGrey2 {background: #222222 !important;}
+	[data-ogsc] .darkModeBackgroundGrey3 {background: #333333 !important;}
+	
+	/* TEXT */
+	[data-ogsc] .darkModeTextWhite {color: #fffffe !important;}
+	[data-ogsc] .darkModeTextLightGrey {color: #f4f4f4 !important;}
+	
+	[data-ogsc] .darkModeBorderWhite {border-color: #fffffe !important;}
+	
+	
+	/* HIDE */
+	[data-ogsc] .darkModeHide {display: none !important;}
+	
+</style>
+	
+<!-- FOR OUTLOOK DPI SCALING -->
+<!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+	
+<!-- BACKUP FONTS FOR OUTLOOK -->
+<!--[if mso]>
+   <style type="text/css">
+      body, table, td {font-family: Arial, Helvetica, sans-serif !important; v-text-align:left;}
+   </style>
+<![endif]-->
+	
+</head>
+
+<body class="darkModeBackgroundBlack" style="margin: 0px; padding: 0px; background: #fffffe;">
+
+<!-- 100% WIDTH WRAPPER BACKGROUND TABLE -->
+<table class="darkModeBackgroundBlack" style="background: #fffffe;" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="darkModeBackgroundBlack" align="center" style="background: #fffffe;">
+<!-- FIXED WIDTH, CENTERED WRAPPER TABLE -->
+<table class="width320"  style="table-layout: fixed; min-width: 620px; width: 620px;" width="620" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		
+		<!-- HEADER -->
+		<tr>
+			<td>
+				<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td class="darkModeBorderWhite darkModeBackgroundBlack" style="background: #fffffa; padding: 15px 30px; border-top: 3px solid #7E7E7E; border-bottom: 3px solid #7E7E7E;">
+								<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" dir="rtl">
+									<tbody>
+										<tr>
+											<td class="darkModeTextWhite " style="padding: 0px 0px 0px 0px; text-align: right; font-family: Helvetica,  Arial, sans-serif; font-size: 11px; line-height: 19px; color: #000001; font-weight: 400;" dir="ltr">
+												<a class="darkModeTextWhite" href="{{ocx_mirror_page}}" target="_blank" style="color: #000001; text-decoration: none;">View in Browser</a>
+											</td>
+											<td dir="ltr">
+												<a href="https://next.pocnplus.com/audio-series/understanding-egfr-m-mnsclc-app-perspectives" target="_blank"><img class="width160 heightAuto" src="https://digitalark.box.com/shared/static/p0qvcrrp37zpwu9x212ohx7sox9mqooc.png" width="220" height="32" style="width: 220px; height: 32px; display: block;" alt="POCN | Podcasts" border="0" /></a>
+											</td>
+											
+										</tr>
+									</tbody>
+								</table>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		
+		
+		
+		<!--  -->
+		<tr>
+			<td>
+				<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td >
+							<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="padding: 30px 0px 0px 0px;">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td>
+													<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="stripe" style="background: #003B70; height: 24px; line-height: 24px; font-size: 24px; mso-line-height-rule: exactly;" height="24">
+																&nbsp;
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="width280" align="center" style="width: 360px;" width="360">
+													 <img class="width260 heightAuto" src="https://digitalark.box.com/shared/static/g5g3vhklguie4r7c8j4z0au04dygw93i.png" width="340" height="68" style="width: 340px; height: 68px;" align="center" alt="A POCN NP|PA Podcast" border="0" /> 
+												</td>
+												<td>
+													<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="stripe"  style="background: #003B70; height: 24px; line-height: 24px; font-size: 24px; mso-line-height-rule: exactly;" height="24">
+																&nbsp;
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr> 
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="paddingLeft30 paddingRight30" style="padding: 30px 50px 50px 50px;">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" dir="rtl">
+											<tr>
+												<td class="block widthFull paddingBottom30 clearLeftPadding" style="padding: 0px 0px 0px 30px;" dir="ltr"  valign="top">
+													<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td>
+																 <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td class="centerText darkModeTextWhite darkModeBorderWhite"  style="border-bottom: 1px solid #003B70; padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 16px; color: #003B70; font-weight: 700; ">
+																			EPISODE 3
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td class="centerText darkModeTextWhite" style="padding: 10px 0px 15px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 18px; line-height: 24px; color: #003B70; font-weight: 700; text-transform: uppercase;">
+																Are Uncommon EGFR Mutations More Common Than You Think? Considerations for Uncommon EGFR Mutations in Patients with Metastatic Non-Small Cell Lung Cancer
+															</td>
+														</tr>
+														<tr>
+															<td >
+																<table class="centerBlock" style="width: 140px;" width="140" border="0" cellspacing="0" cellpadding="0" >
+																	<tbody>
+																		<tr>
+																			<td height="34" style="background: #003B70; font-family: Helvetica, Arial,  sans-serif; text-align: center; font-size: 14px; line-height: 16px; font-weight: 700; height: 34px; border-radius: 50px; " >
+																				 <a href="https://pocnplus.com/audio/are-uncommon-egfr-mutations-more-common-than-you-think?npi={{NPI}}&utm_source=OnGage&utm_medium=email" target="_blank" style="text-decoration: none; color: #fffffe; padding: 9px 10px 9px 10px; border: 1px solid #003B70; display: block; border-radius: 50px;">LISTEN NOW</a> 
+																			 </td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td> 
+												<td class="block widthFull" dir="ltr" width="250" style="width: 250px;"  valign="top">
+													<a href="https://next.pocnplus.com/audio/are-uncommon-egfr-mutations-more-common-than-you-think" target="_blank"><img class="centerBlock widthFull heightAuto" src="https://digitalark.box.com/shared/static/ygtvvrqkk4479u6q6o9mb5vjnk3dtknb.png" width="250" height="250" style="display: block; width: 250px; height: 250px;" alt="" border="0" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="bottom">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 30px; line-height: 30px; font-size: 30px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td valign="bottom" width="30" style="width: 30px;">
+							<img src="https://digitalark.box.com/shared/static/46rp02v35in2yrstkiudq4tfxxcugoo0.png" width="30" height="30" style="display:block; width: 30px; height: 30px;" alt="" border="0"/>
+						</td>
+						<td class="width30" valign="bottom" width="50" style="width: 50px;">
+							&nbsp;
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+			
+		<!---->
+		<tr>
+			<td>
+				<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="paddingLeft30 paddingRight30" style="  padding: 40px 50px 20px 50px;">
+							<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<!-- HEADLINE -->
+								<tr>
+									<td class="darkModeTextWhite centerText" style="padding: 0px 0px 0px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 20px; line-height: 26px; color: #003B70; font-weight: 700;">
+										Looking for what to listen to next? Check out all the episodes on POCN Podcast:
+									</td>
+								</tr>
+								
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="paddingLeft30 paddingRight30 paddingBottom30" style="padding: 0px 50px 30px 50px;  ">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td>
+													 <table class="widthFull" role="presentation" width="160" style="width: 160px;" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="centerText darkModeTextWhite darkModeBorderWhite"  style="border-bottom: 1px solid #003B70; padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 16px; color: #003B70; font-weight: 400; ">
+																<strong>EPISODE 1</strong> 
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 14px 0px 0px 0px;">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" dir="rtl">
+											<tr>
+												<td class="block widthFull paddingBottom30 clearLeftPadding" style="padding: 0px 0px 0px 20px;" dir="ltr"  valign="top">
+													<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+														
+														<tr>
+															<td class="centerText darkModeTextWhite" style="padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 18px; line-height: 24px; color: #003B70; font-weight: 700; text-transform: uppercase;">
+																Catch Up with Episode 1
+															</td>
+														</tr>
+														<tr>
+															<td class="centerText darkModeTextWhite" style="padding: 0px 0px 15px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 18px; color: #003B70; font-weight: 400;">
+																Join Victoria Sherry, DNP, CRNP, AOCNP, as she discusses treatment with tyrosine kinase inhibtors (TKIs), managing 
+TKI-related adverse events, and atypical EGFR mutations.
+															</td>
+														</tr>
+														<tr>
+															<td >
+																<table class="centerBlock" style="width: 140px;" width="140" border="0" cellspacing="0" cellpadding="0" >
+																	<tbody>
+																		<tr>
+																			<td height="34" style="background: #003B70; font-family: Helvetica, Arial,  sans-serif; text-align: center; font-size: 14px; line-height: 16px; font-weight: 700; height: 34px; border-radius: 50px; " >
+																				 <a href="https://pocnplus.com/audio/understanding-egfr-m-mnsclc-an-app-perspective-on-tki-therapy?audioId=278&npi={lead.NPI}&utm_source=OnGage&utm_medium=email" target="_blank" style="text-decoration: none; color: #fffffe; padding: 9px 10px 9px 10px; border: 1px solid #003B70; display: block; border-radius: 50px;">LISTEN NOW</a> 
+																			 </td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td> 
+												<td class="block widthFull" dir="ltr" width="160" style="width: 160px;"  valign="top">
+													<a href="https://next.pocnplus.com/audio/understanding-egfr-m-mnsclc-an-app-perspective-on-tki-therapy" target="_blank"><img class="centerBlock" src="https://digitalark.box.com/shared/static/jqz14r5vnokxm3j0zcy4a8z62vvodbeq.png" width="160" height="160" style="display: block; width: 160px; height: 160px;" alt="" border="0" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="middle">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 8px; line-height: 8px; font-size: 8px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td valign="middle" width="34" style="width: 34px;" align="center">
+							<img src="https://digitalark.box.com/shared/static/2c1opk5au9fcm6ueq2sxvlzj34vbihwz.png" width="30" height="30" style=" width: 30px; height: 30px;" alt="" border="0"  align="center"/>
+						</td>
+						<td valign="middle">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 8px; line-height: 8px; font-size: 8px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr> 
+		
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="padding30" style="padding: 30px 50px;  ">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td>
+													 <table class="widthFull" role="presentation" width="340" style="width: 340px;" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="centerText  darkModeTextWhite darkModeBorderWhite"  style="border-bottom: 1px solid #003B70; padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 16px; color: #003B70; font-weight: 400; ">
+																<strong>EPISODE 2</strong> 
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 14px 0px 0px 0px;">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" dir="ltr">
+											<tr>
+												<td class="block widthFull paddingBottom30 clearRightPadding" style="padding: 0px 20px 0px 0px;" dir="ltr"  valign="top">
+													<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+														
+														<tr>
+															<td class="centerText darkModeTextWhite" style="padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 18px; line-height: 24px; color: #003B70; font-weight: 700; text-transform: uppercase;">
+																Catch Up with Episode 2
+															</td>
+														</tr>
+														<tr>
+															<td class="centerText darkModeTextWhite" style="padding: 0px 0px 15px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 18px; color: #003B70; font-weight: 400;">
+																Listen to this peer discussion with Sarah Sagorsky, MPAS, PA-C, and Dr. Christian Rolfo on the importance of biomarker testing in patients with advanced metastatic non-small cell lung cancer. 
+															</td>
+														</tr>
+														<tr>
+															<td >
+																<table class="centerBlock" style="width: 140px;" width="140" border="0" cellspacing="0" cellpadding="0" >
+																	<tbody>
+																		<tr>
+																			<td height="34" style="background: #003B70; font-family: Helvetica, Arial,  sans-serif; text-align: center; font-size: 14px; line-height: 16px; font-weight: 700; height: 34px; border-radius: 50px; " >
+																				 <a href="https://pocnplus.com/audio/the-importance-of-biomarker-testing-in-patients-with-advanced-metastatic-nsclc?audioId=280&npi=%7B%7BNPI%7D%7D&utm_source=OnGage&utm_medium=email" target="_blank" style="text-decoration: none; color: #fffffe; padding: 9px 10px 9px 10px; border: 1px solid #003B70; display: block; border-radius: 50px;">LISTEN NOW</a> 
+																			 </td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td> 
+												<td class="block widthFull" dir="ltr" width="160" style="width: 160px;"  valign="top">
+													<a href="https://next.pocnplus.com/audio/the-importance-of-biomarker-testing-in-patients-with-advanced-metastatic-nsclc" target="_blank"><img class="centerBlock" src="https://digitalark.box.com/shared/static/gim7bzvbythnczb5uq5c34l43uletue8.png" width="160" height="160" style="display: block; width: 160px; height: 160px;" alt="" border="0" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+				
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="middle">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 8px; line-height: 8px; font-size: 8px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td valign="middle" width="34" style="width: 34px;" align="center">
+							<img src="https://digitalark.box.com/shared/static/2c1opk5au9fcm6ueq2sxvlzj34vbihwz.png" width="30" height="30" style=" width: 30px; height: 30px;" alt="" border="0"  align="center"/>
+						</td>
+						<td valign="middle">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 8px; line-height: 8px; font-size: 8px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr> 
+		 
+		
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="padding30" style="padding: 30px 50px;  ">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td>
+													 <table class="widthFull" role="presentation" width="160" style="width: 160px;" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="centerText darkModeTextWhite darkModeBorderWhite"  style="border-bottom: 1px solid #003B70; padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 16px; color: #003B70; font-weight: 400; ">
+																<strong>EPISODE 4</strong> (coming soon)
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 14px 0px 0px 0px;">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" dir="rtl">
+											<tr>
+												<td class="block widthFull paddingBottom30 clearLeftPadding" style="padding: 0px 0px 0px 20px;" dir="ltr"  valign="top">
+													<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+														
+														<tr>
+															<td class="centerText darkModeTextWhite" style="padding: 0px 0px 10px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 18px; line-height: 24px; color: #003B70; font-weight: 700; text-transform: uppercase;">
+																NP/PA Perspectives in Managing Patients with Metastatic EGFR M+ NSCLC 
+															</td>
+														</tr> 
+														<tr>
+															<td >
+																<table class="centerBlock" style="width: 140px;" width="140" border="0" cellspacing="0" cellpadding="0" >
+																	<tbody>
+																		<tr>
+																			<td height="34" style="background: #003B70; font-family: Helvetica, Arial,  sans-serif; text-align: center; font-size: 14px; line-height: 16px; font-weight: 700; height: 34px; border-radius: 50px; " >
+																				 <a href="https://next.pocnplus.com/audio-series/understanding-egfr-m-mnsclc-app-perspectives" target="_blank" style="text-decoration: none; color: #fffffe; padding: 9px 10px 9px 10px; border: 1px solid #003B70; display: block; border-radius: 50px;">LISTEN NOW</a> 
+																			 </td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td> 
+												<td class="block widthFull" dir="ltr" width="160" style="width: 160px;"  valign="top">
+													<a href="https://next.pocnplus.com/audio-series/understanding-egfr-m-mnsclc-app-perspectives" target="_blank"><img class="centerBlock" src="https://digitalark.box.com/shared/static/qni3h7s1bb50byzp0i63pcz0exf8ltko.png" width="160" height="160" style="display: block; width: 160px; height: 160px;" alt="" border="0" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="bottom">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 16px; line-height: 16px; font-size: 16px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td valign="middle" width="30" style="width: 30px;" align="center">
+							<img src="https://digitalark.box.com/shared/static/lgemd9tfxqjjg42q8oo64g6c7766a1nx.png" width="30" height="30" style=" width: 30px; height: 30px;" alt="" border="0"  align="center"/>
+						</td>
+						<td valign="bottom">
+							<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="height: 16px; line-height: 16px; font-size: 16px; mso-line-height-rule: exactly; background: #003B70;">
+										&nbsp;
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr> 
+		
+		
+		
+		<!---->
+		<tr>
+			<td>
+				<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					
+					<tr>
+						<td class="paddingLeft30 paddingRight30" style="background: #003B70; padding: 30px 50px 20px 50px;">
+							<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+								 
+								<!-- TEXT -->
+								<tr>
+									<td style="padding: 0px 0px 0px 0px;text-align: left; font-family: Arial, sans-serif;font-size: 12px; line-height: 16px; color: #fffffe; font-weight: 400;">
+										POCN+ is the first and only peer-led educational streaming service dedicated to NPs and PAs. There’s always something new to discover, including medical news, expert series, case studies, podcasts, and Clinician’s Corner—all in one place.
+										<br /><br />
+										POCN+ is accessible anytime, anywhere on most internet-connected devices, including your TV, mobile phone, tablet, and desktop computer.
+									</td>
+								</tr> 
+								<!-- TEXT -->
+								<tr>
+									<td style="padding: 16px 0px 0px 0px;text-align: right; font-family: Arial, sans-serif;font-size: 12px; line-height: 16px; color: #fffffe; font-weight: 400;">
+										<a href="#" style="color: #fffffe; text-decoration: none; cursor: default;">PC-US-130067 01/2023</a>
+									</td>
+								</tr> 
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		 
+			
+		
+		
+			
+		<!-- FOOTER -->
+		<tr>
+			<td>
+				<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						
+						<tr>
+							<td class=" darkModeBackgroundBlack darkModeBorderWhite" style="padding: 30px 30px 30px 30px;  background: #fffffa; border-top: 3px solid #7E7E7E; border-bottom: 3px solid #7E7E7E;">
+								<table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tbody>
+										<!-- LOGO -->
+										<tr>
+											<td  align="center" style="padding: 0px 0px 20px 0px;">
+												<a href="https://www.pocn.com/" target="_blank"><img class="width140 heightAuto" src="https://digitalark.box.com/shared/static/6nigjsiw30pe75i8k91rhu4gshx1gwma.png" width="170" height="62" style="width: 170px; height: 62px;" align="center" alt="POCN" border="0" /></a>
+											</td>
+										</tr>
+										<!-- TEXT -->
+										<tr>
+											<td class="darkModeTextWhite" style="text-align: center; font-family: Helvetica,  Arial, sans-serif; font-size: 14px; line-height: 19px; color: #000001; font-weight: 400;">
+												© 2023 Point of Care Network, LLC. All Rights Reserved.
+												<br />
+												<a class="darkModeTextWhite" href="#" style="color: #000001; text-decoration: none; cursor: default;">716 Main Street Boonton, NJ 07056</a>
+												<br />
+												This communication was sent to <a class="darkModeTextWhite" href="#" class="darkModeTextWhite" style="color: #F500FF; text-decoration: none;">[recipient’s email]</a>
+												<br />
+												<a class="darkModeTextWhite" href="https://www.pocn.com/privacy-policy/" class="darkModeTextWhite" target="_blank" style=" color: #000001; text-decoration: underline;">Privacy Policy</a> | <a class="darkModeTextWhite" href="https://go.pointofcarenetwork.com/UnsubscribePage.html?mkt_unsubscribe=1" class="darkModeTextWhite" style=" color: #000001; text-decoration: underline;">Unsubscribe</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		
+		<!-- IMPRESSION TAGS -->
+		<tr>
+			<td style="display: none;">
+				 
+
+			</td>
+		</tr>
+			
+    </table>
+    </td>
+  </tr>
+</table>
+<!-- END OF FIXED WIDTH WRAPPER TABLE -->
+</td>
+</tr>
+</table>
+<!-- END OF 100% WIDTH WRAPPER BACKGROUND TABLE -->
+</body>
+</html>
